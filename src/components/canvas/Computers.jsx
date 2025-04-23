@@ -21,7 +21,7 @@ const Instructions = styled.div`
 `;
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("/desktop_pc/scene.gltf");
 
   return (
     <mesh 
