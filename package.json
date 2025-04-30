@@ -21,7 +21,7 @@
     "react-router-dom": "^6.8.1",
     "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^6.1.15",
-    "three": "^0.149.0"
+    "three": "^0.155.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

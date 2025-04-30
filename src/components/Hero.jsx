@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+
 import { Suspense, lazy } from "react";
-
-// Lazy load Three.js component
-const ComputersCanvas = lazy(() => import("./canvas/Computers"));
-
+// direct dynamic import of the real file
+const ComputersCanvas = lazy(() => import("./canvas/Computers.jsx"));
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -27,8 +26,8 @@ const Hero = () => {
 
       {/* Load 3D canvas only when ready */}
       <Suspense fallback={<div className="text-white text-center">Loading 3D...</div>}>
-        <ComputersCanvas />
-      </Suspense>
+      <ComputersCanvas />
+       </Suspense>
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
