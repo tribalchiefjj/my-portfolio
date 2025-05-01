@@ -19,14 +19,17 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
   jobit,
   tripguide,
   threejs,
+ 
 } from "../assets";
 
 import patImage from "../assets/pat.jpeg";
-
+import gymImage from "../assets/gym.png";
+import financialImage from "../assets/financial.png";
+import IslamicImage from "../assets/Islamic.png";
+import BechoesImage from "../assets/Bechoes.png";
 
 export const navLinks = [
   {
@@ -189,7 +192,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After jafar optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -198,30 +201,133 @@ const testimonials = [
 ];
 
 const projects = [
+
   {
-    name: "Fursa mobile app",
+    name: "interfaith site",
     description:
-      "An Android mobile app that helps youth find opportunities like jobs, internships, and businesses.",
+      "a full-stack website that bridges divides and foster mutual respect by giving voice to honest, heartfelt reflections. Instead of debating doctrines or traditions,the site shines a light on the personal experiences and “signs” that move us, hoping to guide someone else toward a new perspective. ",
     tags: [
       {
-        name: "React Native",
+        name: "Typscript,",
         color: "blue-text-gradient",
       },
       {
-        name: "Expo Go",
+        name: "API",
         color: "green-text-gradient",
       },
       {
-        name: "Youths",
+        name: "Admin",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PostgreSql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/tribalchiefjj/fursa-mobile",
+    image: BechoesImage,
+    source_code_link: "https://github.com/tribalchiefjj/interfaith-frontend",
+    live_demo_link: "https://bechoes.vercel.app/", 
   },
+
+  {
+    name: "Event Registration System",
+    description:
+      "High-value technical solutions for event regestrations abd booking ",
+    tags: [
+      {
+        name: "Firebase Authentication ",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Admin",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "QR Ecosystem",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Data Export",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    
+    source_code_link: "https://github.com/tribalchiefjj/events-system",
+  },
+
+  {
+    name: "Gym-System-Dashboard",
+    description:
+      "giving my local gym a technical solution for manyging the gym was a volunteer tas for me , and a skill boaster project too , its a gym system , users have to register and the admin most of it is admin site to mage all the gym staff  ",
+    tags: [
+      {
+        name: "API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PostgreSql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typscript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: gymImage,
+    source_code_link: "https://github.com/tribalchiefjj/GYM-system",
+  },
+  // {
+  //   name: "Fursa mobile app",
+  //   description:
+  //     "An Android mobile app that helps youth find opportunities like jobs, internships, and businesses.",
+  //   tags: [
+  //     {
+  //       name: "React Native",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Expo Go",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Youths",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: carrent,
+  //   source_code_link: "https://github.com/tribalchiefjj/fursa-mobile",
+  // },
   
   {
-    name: "online Bidding System",
+    name: "online Auction System",
     description:
       "a full-stack application that allows users to create, bid on, and manage auctions in real-time. It is built with modern web technologies and designed to offer a robust and interactive user experience",
     tags: [
@@ -292,7 +398,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: financialImage,
     source_code_link: "https://github.com/tribalchiefjj/financial-dashboard-",
   },
   {
@@ -316,6 +422,124 @@ const projects = [
    
     source_code_link: "https://github.com/tribalchiefjj/stock-dashboard-web",
   },
+
+  {
+    name: "Islamic-Audit",
+    description:
+      "n educational tool to help people understand the ethical status of various actions in Islam along with references  ",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Threejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Forked",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Contribution",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: IslamicImage,
+    source_code_link: "https://github.com/tribalchiefjj/Islamic-Audit",
+  },
+
+  {
+    name: "Real-Time Collaborative Code Editor",
+    description:
+      "To gain hands-on experience, challenge myself with real world projects that people are using , and refine my skills this is a code editor that allows multiple users to work on the same codebase simultaneously. This project demonstrates key principles of distributed systems, concurrency, and real-time updates, showcasing technical depth and practical use. ",
+    tags: [
+      {
+        name: "Nodejs,",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express,",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Socket.IO",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "WebSocket",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typscript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "concurrency",
+        color: "pink-text-gradient",
+      },
+    ],
+    
+    source_code_link: "https://github.com/tribalchiefjj/Code-Editor",
+  },
+
+  {
+    name: "Online Auction Microservices Project",
+    description:
+      "This project is a microservices-based online auction system designed for scalability, modularity, and ease of deployment. I used Docker, Flask, PostgreSQL, and microservice communication patterns to ensure a robust and maintainable architecture. ",
+    tags: [
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Flask",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Socket.IO",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Pytest",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JWT-based authentication",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Microservices Architecture",
+        color: "pink-text-gradient",
+      },
+    ],
+    
+    source_code_link: "https://github.com/tribalchiefjj/microservices",
+  },
+
 ];
+
+
+
 
 export { services, technologies, experiences, testimonials, projects };

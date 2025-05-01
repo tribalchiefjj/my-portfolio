@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
+// import { websiteIcon } from "../assets"; // Uncomment and import if you have a website icon
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -34,6 +36,24 @@ const ProjectCard = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            {live_demo_link && (
+              <div
+                onClick={() => window.open(live_demo_link, "_blank")}
+                className='bg-gradient-to-br from-purple-500 to-pink-500 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2'
+              >
+                {/* Option 1: Using an icon (uncomment if you have websiteIcon imported) */}
+                {/* {websiteIcon && (
+                  <img
+                    src={websiteIcon}
+                    alt='live demo'
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                )} */}
+
+                {/* Option 2: Using text */}
+                <span className='text-white text-xs font-bold'>Live</span>
+              </div>
+            )}
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -90,7 +110,12 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+            live_demo_link={project.live_demo_link}
+          />
         ))}
       </div>
     </>
