@@ -1,9 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import { Navbar, Hero, StarsCanvas } from "./components";
+import { Navbar, Hero } from "./components";
 import Footer from "./components/Footer"; // <-- Import the Footer
 
 // Lazy load components to split bundle
+const StarsCanvas = lazy(() => import("./components/canvas/Stars.jsx"));
 const About = lazy(() => import("./components/About"));
 const Contact = lazy(() => import("./components/Contact"));
 const Experience = lazy(() => import("./components/Experience"));
@@ -29,7 +30,9 @@ const App = () => {
           <Feedbacks />
           <div className='relative z-0'>
             <Contact />
-            <StarsCanvas />
+            <Suspense fallback={null}>
+              <StarsCanvas />
+            </Suspense>
             <Footer />  {/* Add the Footer below StarsCanvas */}
           </div>
         </Suspense>
