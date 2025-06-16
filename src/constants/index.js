@@ -26,8 +26,8 @@ import {
 } from "../assets";
 
 import patImage from "../assets/pat.jpeg";
-import gymImage from "../assets/gym.png";
-import financialImage from "../assets/financial.png";
+import gymImage from "../assets/gym.webp";
+import financialImage from "../assets/financial.webp";
 import IslamicImage from "../assets/Islamic.png";
 import BechoesImage from "../assets/Bechoes.png";
 
